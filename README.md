@@ -1,5 +1,5 @@
 # MySQL-Learning
-
+## 基础部分
 	一、为什么要学习数据库
 	二、数据库的相关概念      
 		DBMS、DB、SQL
@@ -927,3 +927,14 @@ sql92
 
 	leave类似于java中的break语句，跳出所在循环！！！
 	
+## 高级部分(见MySQL高级.html)
+
+### 修改字符集问题（插入中文报错）
+ - 修改配置文件my.cnf，在最后加入中文字符集配置，character_set_server=utf8
+ - 重新启动mysql
+ - 已生成的库表字符集变更
+    - 修改数据库的字符集 mysql> alter database mydb character set 'utf8';
+    - 修改数据表的字符集 mysql> alter table mydbl convert to character set 'utf8';
+ 
+
+     
